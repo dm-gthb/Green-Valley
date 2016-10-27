@@ -1,0 +1,210 @@
+.rest-tabs {
+
+
+  &__top-item {
+    min-height: 322px;
+    padding-top: 20px;
+
+    &-container {
+      width: 100%;
+      margin: 0 auto;
+      background-color: fadeout(#fff, 20%);
+      padding-top: 10px;
+      padding-bottom: 5px;
+    
+      @media (min-width: @screen-sm-min) {
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        width: 1180px;
+      }
+
+
+    }
+
+    &--family {
+    background-image: url("../../img/rest-tabs__top-bg.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+      @media (min-width: @screen-sm-min) {
+        background-position: center center;
+      }
+    }
+
+    &--corporate {
+      display: none;
+    }
+  }
+
+  &__top-title {
+    font-size: @font-size-h2;
+    line-height: 26px;
+    color: @text-color-black;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 0.9px;
+
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+      margin-bottom: 14px;
+      font-size: 36px;
+      line-height: 42px;
+      margin-left: -8px;   
+      }
+  }
+
+  &__top-description {
+    font-size: @font-size-base;
+    line-height: 24px;
+    color: @text-color-black;
+    text-align: center;
+
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+      font-size: @font-size-h2;
+      line-height: 24px;
+      margin-left: -8px;  
+      }
+  }
+
+  &__switcher {
+    max-width: 295px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+    &-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #838383;
+
+      &--active {
+        color: @text-color-orange;
+
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 30px;
+          background-color: @text-color-orange;
+          margin: 0 auto;
+          padding: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &__bottom-item {
+    padding-top: 30px;
+    padding-bottom: 95px;
+    text-align: center;
+
+    @media (min-width: @screen-sm-min) {
+      padding-bottom: 25px;
+    }
+
+    &-container {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &--family {
+      background-image: url("../../img/rest-tabs__bottom-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+
+    &--corporate {
+      display: none;
+    }
+  }
+
+   &__bottom-title {
+    font-size: @font-size-h1;
+    text-align: center;
+    margin-bottom: 30px;
+   } 
+
+   &__bottom-description {
+    max-width: 570px;
+    margin: 0 auto;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    margin-bottom: 30px;
+    text-align: center;
+   }
+
+   &__bottom-list {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+
+    @media (min-width: @screen-sm-min) {
+      width: 570px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      width: 1200px;
+    }
+
+    &-item {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: @font-size-small;
+      flex-basis: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+   }
+
+
+   &__bottom-img {
+     display: block;
+      margin: 0 auto 14px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+   }
+
+   &__text-line {
+
+    @media (min-width: @screen-sm-min) {
+      display: inline-block;
+      padding: 3px 11px 3px 8px;
+      background-color: fadeout(#fff, 20%);
+      letter-spacing: 2px;
+
+      &--small {
+        letter-spacing: 0;
+      }
+    }
+  }
+
+   &__empty-line {
+    display: block;
+ }  
+
+}

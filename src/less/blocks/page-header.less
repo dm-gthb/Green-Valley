@@ -1,0 +1,42 @@
+.page-header {
+	
+	padding-top: 17px;
+	padding-bottom: 25px;
+
+	&__container {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (min-width: @screen-lg-min) {
+			justify-content: space-between;
+		}
+
+		 @media (min-width: @screen-lg-min) {
+        width: 1180px;
+      }
+	}
+
+	&__contacts {
+		display: none;
+
+		@media (min-width: @screen-lg-min) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	}
+
+	&__phone {
+		text-decoration: none;
+		color: @text-color-black;
+		font-size: @font-size-h2;
+	}
+
+	&__address {
+		color: @text-color-black;
+		font-size: @font-size-small;
+	}
+}

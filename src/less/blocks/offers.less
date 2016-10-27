@@ -1,0 +1,52 @@
+.offers {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+	
+	&__title {
+		font-size: @font-size-h1;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	&__item {
+		min-height: 297px;
+		position: relative;
+
+		&--photo1 {
+			background-image: url(../../img/offers-bg-1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center top;
+		}
+
+	 &--photo2 {
+			display: none;	
+		}
+
+		&-info {
+			background-color: @grey-light;
+			width: 295px;
+			padding: 20px;
+			position: absolute;
+			top: 50%;
+			text-align: left;
+		}
+
+		&-title {
+			margin: 0;
+			margin-bottom: 8px;
+			font-size: @font-size-h2;
+			text-transform: uppercase;
+			color: @text-color-orange;
+		}
+
+		&-description {
+			font-size: @font-size-base;
+			line-height: 20px;
+			color: @text-color-black;
+		}
+	}
+}

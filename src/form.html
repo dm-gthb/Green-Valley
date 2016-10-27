@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header class="page-header">
+		<div class="page-header__container">
+
+			<a href="#" class="logo"><img src="" alt="greenvalley"></a>
+
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Номера</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Коттедж</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Отдых</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+				</ul>
+				<span class="main-nav__burger"></span>
+			</nav>
+
+			<div class="page-header__contacts">
+				<a href="tel:+78127775588">+7 812 777-55-88</a> <br>
+				г. Санкт-Петербург, Приморское ш.600
+			</div>
+
+			<a href="#" class="btn  btn--icon-calendar">Забронировать</a>
+
+		</div>
+	</header>
+
+	<section class="form">
+		<div class="form__header">
+			<h1 class="form__title">Бронирование</h1>
+			<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78127775588" class="booking-phone">+7 812 777-55-88</a></p>
+		</div>
+
+		<!-- <form action="" class=""> --> <!-- нужен?
+ -->
+			<section class="form__date">
+				<span class="form__step-number">Шаг 1</span>
+				<h2 class="form__date-title">Дата отдыха</h2>
+
+				<div class="form__date-content">
+					<span class="form__date-inputs-name">Дата въезда</span>
+					<div class="form-date-inputs-wrapper">
+						<input type="text" class="form__date-input" id="entry-day" placeholder="10">
+						<input type="text" class="form__date-input" id="entry-month" placeholder="11">
+						<input type="text" class="form__date-input" id="entry-year" placeholder="2015">
+					</div>
+				</div>
+				<div class="form__date-content">
+					<span class="form__date-inputs-name">Дата выезда</span>
+					<div class="form-date-inputs-wrapper">
+						<input type="text" class="form__date-input" id="departure-day" placeholder="10">
+						<input type="text" class="form__date-input" id="departure-month" placeholder="11">
+						<input type="text" class="form__date-input" id="departure-year" placeholder="2015">
+					</div>
+				</div>
+			</section> 
+
+	   	<section class="form__place">
+		  	<span class="form__step-number">Шаг 2</span>
+	    	<h2 class="Form__place-title">место проживания</h2>
+				<form action="" class="form__place-content">
+				  <input type="radio" class="form__place-tab-1" id="place-tab-1" name="place-tab">
+				  <input type="radio" class="form__place-tab-2" id="place-tab-2" name="place-tab" checked>
+				  <div class="form__place-label-wrapper">
+				    <label for="place-tab-1">hotels</label>
+				    <label for="place-tab-2">cottages</label>
+				  </div>
+
+				  <section class="form__building-type form__building-type--hotel">
+				  	<span class="form__step-number">Шаг 3</span>
+    				<h2 class="Form__place-title">Тип отеля</h2>
+				  </section>
+
+				  <section class="form__building-type form__building-type--cottage">
+				  	<span class="form__step-number">Шаг 3</span>
+    				<h2 class="Form__place-title">Тип коттеджа</h2>
+    				<form action="" class="form__building-type-content">
+	    				<div class="form__building-type-inputs">
+	    					<input type="radio" class="form__building-type-main" id="main-cottage" name="cottage-type" checked>
+	    					<input type="radio" class="form__building-type-lake" id="lake-cottage" name="cottage-type">
+	    					<input type="radio" class="form__building-type-olhovka" id="olhovka-cottage" name="cottage-type">
+	    					<input type="radio" class="form__building-type-port" id="port-cottage" name="cottage-type">
+	  					</div>
+    					<div class="form__building-type-labels">
+    						<label for="main-cottage">Флагман</label>
+    						<label for="lake-cottage">Озерный</label>
+    						<label for="olhovka-cottage">Ольховка</label>
+    						<label for="port-cottage">Портовый</label>
+    					</div>
+    					<div class="form__building-type-features-wrapper">
+	    					<ul class="form__building-type-features form__building-type-features--main">
+			    				<li>Площадь 100м2</li>
+			    				<li>3 комнаты</li>
+			    				<li>5 спальных мест</li>
+			    				<li>раздельный санузел</li>
+			    				<li>WI-FI</li>
+			    			</ul>
+		    			</div>
+
+		    			<div class="form__building-type-features-wrapper">
+	    					<ul class="form__building-type-features form__building-type-features--lake">
+			    				<li>Площадь 100м2</li>
+			    				<li>3 комнаты</li>
+			    				<li>5 спальных мест</li>
+			    				<li>раздельный санузел</li>
+			    				<li>WI-FI</li>
+			    			</ul>
+		    			</div>
+
+		    			<div class="form__building-type-features-wrapper">
+	    					<ul class="form__building-type-features form__building-type-features--olhovka">
+			    				<li>Площадь 100м2</li>
+			    				<li>3 комнаты</li>
+			    				<li>5 спальных мест</li>
+			    				<li>раздельный санузел</li>
+			    				<li>WI-FI</li>
+			    			</ul>
+		    			</div>
+
+		    			<div class="form__building-type-features-wrapper">
+	    					<ul class="form__building-type-features form__building-type-features--port">
+			    				<li>Площадь 100м2</li>
+			    				<li>3 комнаты</li>
+			    				<li>5 спальных мест</li>
+			    				<li>раздельный санузел</li>
+			    				<li>WI-FI</li>
+			    			</ul>
+		    			</div>
+		    			
+				</form>	
+		  </section>
+
+			<section class="form__personal">
+				<span class="form__step-number">Шаг 4</span>
+				<h2 class="form__personal-title">Персональная информация</h2>
+
+				<div class="field-text">
+      		<input class="field-text__input" type="text" placeholder="Владимир">
+      	</div>
+
+      	<div class="field-text">
+      		<input class="field-text__input" type="text" placeholder="Фамилия">
+      	</div>
+
+      	<div class="field-text">
+      		<input class="field-text__input" type="text" placeholder="Номер телефона">
+      		<span class="field-text__description">Мы свяжемся с вами в случае необходимости.</span>
+      	</div>
+
+      	<div class="field-text">
+      		<input class="field-text__input" type="text" placeholder="e-mail">
+      		<span class="field-text__description">На этот адрес мы вышлем вам подтверждение о забронированном номере.</span>
+      	</div>
+			</section>
+
+			<section class="form__payment">
+				<span class="form__step-number">Шаг 5</span>
+				<h2 class="form__payment-title">Способ оплаты</h2>
+
+				<div class="form__payment-amount">
+					<span class="form__payment-amount-title">К оплате</span>
+					<span class="form__payment-amount-text">Выберете дату</span>
+				</div>
+
+				<div class="form__payment-on-place-wrapper">
+
+					<div class="form__payment-on-place-content">
+						<label>
+              <input type="radio" id="paymentOnPlace" name="type-of-payment">
+              <span class="payment-on-place__choose">по приезду</span>
+            </label>
+            <p class="payment-on-place__description">Вы можете произвести оплату по факту заселения.</p>
+          </div>
+
+				</div>
+
+				<div class="field-text">
+					<label>Номер карты
+					<input type="text" class="field-text__input" placeholder="0000-0000-0000-0000">
+					</label>
+				</div>
+			</section>
+		<!-- </form> -->
+	</section> -->
+
+	<footer class="page-footer">
+		<div class="page-footer__container"> <!-- необязательно -->
+
+			<div class="page-footer__adress">
+				г. Санкт-Петербург <br>
+				Приморское ш.600
+			</div>
+
+			<a href="#" class="logo"><img src="" alt="greenvalley"></a>
+			<div class="page-footer__social-wrapper">
+				<a class="social-vk  social-vk--green" href="#"></a>
+				<a class="social-instagramm  social-instagramm--green" href="#"></a>
+				<a class="social-fb  social-fb--green" href="#"></a>
+			</div>
+
+			<div class="page-footer__contacts">
+				+7 812 77-55-88 <br>
+				info@greenvalue.ru
+			</div>
+
+		</div>
+	</footer>
+	</body>
+</html>
+

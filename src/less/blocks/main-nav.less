@@ -1,0 +1,31 @@
+.main-nav {
+  display: none;
+  max-width: 505px;
+
+	&__list {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+	&__item {
+		margin-right: 18px;
+	}	
+
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: @text-color-black;
+		font-size: @font-size-small;
+
+		&--active {
+			color: @text-color-orange;
+		}
+	}
+
+  @media (min-width: @screen-lg-min) {
+			display: flex;
+		}
+}
