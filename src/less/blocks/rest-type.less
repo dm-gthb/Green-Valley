@@ -1,39 +1,32 @@
 .rest-type {
+	background-color: @aqua;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 32px;
 
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
+  &__container {
+  	max-width: 1200px;
+    width: 100%;
+  	margin: 0 auto;
+  }
 
-	&__wrapper {
+  &__title {
+  	margin: 0;
+  	margin-bottom: 35px;
+    color: @white;
+    font-size: @font-size-h1;
+  }
+
+  &__wrapper {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
-	&__link {
-		text-decoration: none;
-  	color: @text-color-black;
-	}
-
-	&__text {
-		background-color: @white;
-		padding-top: 40px;
-		padding-bottom: 50px;
-	}
-
-	&__title {
-		font-size: @font-size-h1;
-		line-height: 19px;
-		margin-bottom: 12px;
-	}
-
-	&__price {
-		font-size: @font-size-small;
-		line-height: 24px;
-	}
-
-	&__total-sum {
-		color: @text-color-orange;
-	}
+	&__item {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}	
 }
