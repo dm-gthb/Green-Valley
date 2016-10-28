@@ -2,8 +2,6 @@
   align-self: center;
   position: relative;
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
   font-size: @font-size-btn;
   text-transform: uppercase;
   text-decoration: none;
@@ -23,6 +21,8 @@
       background-color: @orange;
       padding-left: 42px;
       padding-right: 20px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       border-radius: 50px;
       &::before {
         position: absolute;
@@ -36,19 +36,24 @@
     }
 	}
 
-
 	&--white-bordered {
     display: inline-block;
     border: 1px solid white;
     border-radius: 50px;
     padding: 12px 28px;
-}
+  }
 
-&--room-list {
-    display: inline-block;
-    border: 1px solid green;
+  &--non-bordered-round {
+    padding: 14px 32px;
     border-radius: 50px;
-    padding: 12px 28px;
+    background-color: @orange;
+  }
+
+  &--bottom-bordered {
     color: @text-color-black;
-}
+    border-bottom: 1px dashed black;
+    padding-bottom: 0px;
+  }
+
+  &--non-bordered-square{}
 }

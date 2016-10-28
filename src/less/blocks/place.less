@@ -6,15 +6,25 @@
 	}
 
 	&__text {
-		background-color: @white;
-		padding-top: 40px;
-		padding-bottom: 50px;
+		// border: 1px solid red;
+
+		&--rest-type{
+			background-color: @white;
+			padding-top: 38px;
+			padding-bottom: 50px;
+		}
+
+		&--room-type {
+			background-color: @grey-light;
+			padding-top: 38px;
+			padding-bottom: 28px;
+		}
 	}
 
 	&__title {
 		font-size: @font-size-h1;
 		line-height: 19px;
-		margin-bottom: 12px;
+		margin-bottom: 10px;
 	}
 
 	&__price {
@@ -26,15 +36,12 @@
 		color: @text-color-orange;
 	}
 
-	&__description {
-		max-width: 400px;
-		width: 100%;
-		text-align: left;
-	}
 
+
+
+// если понадобится общий для всех блоков
 	&__img {
-		border: 1px solid red;
+		// border: 1px solid red;
 		display: block;
-		text-align: right;
 	}
 }
