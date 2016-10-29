@@ -1,7 +1,7 @@
 .btn {
   align-self: center;
   position: relative;
-  display: block;
+  display: inline-block;
   font-size: @font-size-btn;
   text-transform: uppercase;
   text-decoration: none;
@@ -15,24 +15,20 @@
 
 	
 	&--icon-calendar {
-		display: none;
-    @media (min-width: @screen-lg-min) {
-      display: inline-block;
-      background-color: @orange;
-      padding-left: 42px;
-      padding-right: 20px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      border-radius: 50px;
-      &::before {
-        position: absolute;
-        left: 20px;
-        top: 11px;
-        content: '';
-        width: 15px;
-        height: 16px;
-        background-image: url('../../img/btn-icon-calendar.png');
-      }
+    background-color: @orange;
+    padding-left: 42px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 50px;
+    &::before {
+      position: absolute;
+      left: 20px;
+      top: 11px;
+      content: '';
+      width: 15px;
+      height: 16px;
+      background-image: url('../../img/btn-icon-calendar.png');
     }
 	}
 

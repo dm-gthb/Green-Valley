@@ -1,0 +1,148 @@
+.about-room {
+	// border: 2px solid green;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 48px;
+
+	@media (min-width: @screen-sm-min) {
+		margin-bottom: 98px;
+	}
+
+	@media (min-width: @screen-lg-min) {
+		margin-bottom: 48px;
+	}
+	// text-align: center;
+
+	&__info-wrapper {
+		// border: 1px dashed green;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		@media (min-width: @screen-lg-min) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+	}
+
+	&__info-picture {
+		// border: 1px solid red;
+		text-align: center;
+		max-width: 580px;
+		width: 100%;
+		margin: 0 auto;
+
+		@media (min-width: @screen-lg-min) {
+			order: 2;
+			margin: 0;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__info-description {
+		// border: 1px solid red;
+		max-width: 580px;
+		width: 100%;
+		margin: 0 auto;
+		// margin-bottom: 42px;
+		padding-left: 20px;
+		// padding-top: 48px;
+
+		@media (min-width: @screen-lg-min) {
+			padding-left: 0;
+			margin: 0;
+			width: 45%;
+		}
+	}
+
+	&__info-title {
+		font-size: @font-size-h1;
+		line-height: 19px;
+		margin-bottom: 22px;
+		margin-top: 42px;
+		color: @text-color-black;
+
+		&--first {
+			margin-top: 48px;
+			@media (min-width: @screen-lg-min) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__info-text {
+		font-size: @font-size-base;
+		line-height: @line-height-base;
+		// margin-bottom: 42px;
+		color: @text-color-black;
+	}
+
+	&__info-features-list-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: @screen-sm-min) {
+      flex-direction: row;
+    }
+	}
+
+	&__info-features-list {
+		width: 100%;
+		// border: 1px solid red;
+		list-style: none;
+		font-size: @font-size-base;
+		line-height: @line-height-base;
+	}
+
+	&__info-features-item {
+		// border: 1px solid blue;
+		position: relative;
+		padding-left: 11px;
+		margin-bottom: 7px;
+
+		&::last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			border-top: 2px solid @orange;
+		  border-right: 2px solid @orange;
+		  transform: rotate(45deg);
+		  left: 0px;
+		  top: 0px;
+		  bottom: 0;
+		  margin: auto;
+		}
+	}
+
+	&__to-book {
+		text-align: center;
+		// border: 1px solid blue;
+		margin-top: 42px;
+		@media (min-width: @screen-sm-min){
+			margin-top: 35px;
+		}
+		@media (min-width: @screen-lg-min){
+			margin-top: 95px;
+		}
+	}
+
+	&__btn {
+		margin-bottom: 18px;
+	}
+}
+
+
+
