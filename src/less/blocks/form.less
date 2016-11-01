@@ -157,7 +157,7 @@
 		margin-bottom: 24px;
 	}
 
-	&__place-choose-labels-wrapper {
+	&__place-types-list {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -166,15 +166,16 @@
 	&__place-choose {
 
 		&--bg-gray {
-			background-color: #ddd;
+			background-color: @grey;
 			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 	}
 
 
 
 
-	&__place-choose-label {
+	&__place-types-item {
 		position: relative;
 		width: 190px;
 		height: 160px;
@@ -208,7 +209,7 @@
 		}
 	}
 
-	&__cottage-choose-labels-wrapper {
+	&__cottage-types-list {
 			// border: 1px solid green;
 			background-color: #fff;
 			display: flex;
@@ -218,14 +219,14 @@
 			padding-top: 50px;
 			padding-bottom: 15px;
 			@media (min-width: @screen-sm-min) {
-				background-color: #ddd;
+				background-color: @grey;
 				flex-direction: row;
 				padding: 0;
 				margin-bottom: 20px;
 			}
 		}
 
-	&__cottage-choose-label {
+	&__cottage-types-item {
 		display: inline-block;
 		background-color: #fff;
 		line-height: 18px;
@@ -241,11 +242,89 @@
 		border: 1px solid  #ddd;
 		margin-bottom: 0;
 		}
+	}
 
+	&__cottage-type-details-list {
+		// border: 1px solid green;
+		display: none;
+		@media (min-width: @screen-sm-min) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: stretch;
+		}
+	}
 
+	&__cottage-type-details-item {
+		position: relative;
+		// border: 1px solid orange;
+		display: none;
+		@media (min-width: @screen-sm-min) {
+			flex: 0 1 152px;
+			max-width: 152px;
+			background-color: #fff;
+			text-align: center;
+			display: block;
+			padding-top: 84px;
+			font-size: @font-size-small;
+			line-height: 18px;
+			text-transform: uppercase;
+
+			&::after {
+				// border: 5px solid red;
+				content: '';
+				position: absolute;
+				top: 26px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&--area::after {
+				background-image: url("../../img/cottages-types-sprite.png");
+				background-repeat: no-repeat;
+				background-position: -70px -57px;
+				width: 42px;
+				height: 42px;
+			}
+			&--beds::after {
+				background-image: url("../../img/cottages-types-sprite.png");
+				background-repeat: no-repeat;
+				background-position: -5px -57px;
+				width: 55px;
+				height: 42px;
+			}
+			&--rooms::after {
+				background-image: url("../../img/cottages-types-sprite.png");
+				background-repeat: no-repeat;
+				background-position: -70px -5px;
+				width: 42px;
+				height: 42px;
+			}
+			&--bath::after {
+				background-image: url("../../img/cottages-types-sprite.png");
+				background-repeat: no-repeat;
+				background-position: -5px -5px;
+				width: 55px;
+				height: 42px;
+			}
+			&--wifi::after {
+				background-image: url("../../img/cottages-types-sprite.png");
+				background-repeat: no-repeat;
+				background-position: -122px -5px;
+				width: 50px;
+				height: 42px;
+			}
+		}
 	}
 
 
+
+	&__place-cottage-types {
+		// display: flex;
+		// flex-direction: column;
+		// border: 1px solid red;
+	}
 }
 
 
@@ -278,25 +357,26 @@
   }
 }
 
-.form__cottage-type-1:checked ~ .form__cottage-choose--flagship {display: block;}
-.form__cottage-type-2:checked ~ .form__cottage-choose--flagship {display: none;}
-.form__cottage-type-3:checked ~ .form__cottage-choose--flagship {display: none;}
-.form__cottage-type-4:checked ~ .form__cottage-choose--flagship {display: none;}
 
-.form__cottage-type-2:checked ~ .form__cottage-choose--lake {display: block;}
-.form__cottage-type-1:checked ~ .form__cottage-choose--lake {display: none;}
-.form__cottage-type-3:checked ~ .form__cottage-choose--lake {display: none;}
-.form__cottage-type-4:checked ~ .form__cottage-choose--lake {display: none;}
+.form__cottage-type-1:checked ~ .form__cottage-type-details-list--flagship {display: flex;}
+.form__cottage-type-2:checked ~ .form__cottage-type-details-list--flagship {display: none;}
+.form__cottage-type-3:checked ~ .form__cottage-type-details-list--flagship {display: none;}
+.form__cottage-type-4:checked ~ .form__cottage-type-details-list--flagship {display: none;}
 
-.form__cottage-type-3:checked ~ .form__cottage-choose--olhovka {display: block;}
-.form__cottage-type-1:checked ~ .form__cottage-choose--olhovka {display: none;}
-.form__cottage-type-2:checked ~ .form__cottage-choose--olhovka {display: none;}
-.form__cottage-type-4:checked ~ .form__cottage-choose--olhovka {display: none;}
+.form__cottage-type-2:checked ~ .form__cottage-type-details-list--lake {display: flex;}
+.form__cottage-type-1:checked ~ .form__cottage-type-details-list--lake {display: none;}
+.form__cottage-type-3:checked ~ .form__cottage-type-details-list--lake {display: none;}
+.form__cottage-type-4:checked ~ .form__cottage-type-details-list--lake {display: none;}
 
-.form__cottage-type-4:checked ~ .form__cottage-choose--port {display: block;}
-.form__cottage-type-1:checked ~ .form__cottage-choose--port {display: none;}
-.form__cottage-type-2:checked ~ .form__cottage-choose--port {display: none;}
-.form__cottage-type-3:checked ~ .form__cottage-choose--port {display: none;}
+.form__cottage-type-3:checked ~ .form__cottage-type-details-list--olhovka {display: flex;}
+.form__cottage-type-1:checked ~ .form__cottage-type-details-list--olhovka {display: none;}
+.form__cottage-type-2:checked ~ .form__cottage-type-details-list--olhovka {display: none;}
+.form__cottage-type-4:checked ~ .form__cottage-type-details-list--olhovka {display: none;}
+
+.form__cottage-type-4:checked ~ .form__cottage-type-details-list--port {display: flex;}
+.form__cottage-type-1:checked ~ .form__cottage-type-details-list--port {display: none;}
+.form__cottage-type-2:checked ~ .form__cottage-type-details-list--port {display: none;}
+.form__cottage-type-3:checked ~ .form__cottage-type-details-list--port {display: none;}
 
 .form {
   &__cottage-type-1, 
@@ -337,6 +417,5 @@
   }
 }
 
-.form__place-hotel-types {
-	// display: none;
-}
+
+

@@ -47,8 +47,6 @@
 			</div>
 		</div>
 
-		<!-- <form action="" class=""> --> <!-- нужен?
- -->
 			<section class="form__date">
 				<div class="form__date-container">
 					<div class="form__step-number">Шаг 1</div>
@@ -76,169 +74,218 @@
 
 					</div>
 				</div>
-			</section> 
-
-	   	<section class="form__place">
-	   		<div class="form__place-container">
-			  	<div class="form__step-number">Шаг 2</div>
-		    	<h2 class="form__place-title">место проживания</h2>
-
-		    	<!-- <div class="form__place-content-wrapper"></div> -->
+			</section>
 
 
+    	<section class="form__place">
+				<div class="form__place-container">
+
+					<div class="form__step-number">Шаг 2</div>
 
 					<form action="" class="form">
+					  <input type="radio" class="form__place-type-1" id="place-type-1" name="place-type">
+					  <input type="radio" class="form__place-type-2" id="place-type-2" name="place-type" checked>
 
-					  <input type="radio" class="form__place-type-1" id="place-type-1" name="place-type" />
-					  <input type="radio" class="form__place-type-2" id="place-type-2" name="place-type" checked />
-
-			    	<div class="form__step">
-					    <h2>radiobuttons</h2>
-					    <label for="place-type-1">hotels</label>
-					    <label for="place-type-2">cottages</label>
+					  <!-- <div class="form__place-choose"> -->
+					    <h2 class="form__place-title">Место проживания</h2>
+					    <div class="form__place-types-list">
+					    <label class="form__place-types-item form__place-types-item--hotel" for="place-type-1">Отель</label>
+					    <label class="form__place-types-item form__place-types-item--cottage" for="place-type-2">Коттедж</label>
+					    <!-- </div> -->
 					  </div>
 
-					  <div class="form__step  form__step--bg-gray  form__step--hotels">
-					    <h2>hotels type</h2>
-					    <p>11111</p>
-					  </div>
-
-					  <div class="form__step  form__step--bg-gray  form__step--cottages">
-					    <h2>cottages type</h2>
-					    <p>22222</p>
-					  </div>
-
-			  	</form>
-
-
-
-
-
-					<form action="" class="form__place-content">
-					  <input type="radio" class="form__place-tab-1" id="place-tab-1" name="place-tab">
-					  <input type="radio" class="form__place-tab-2" id="place-tab-2" name="place-tab" checked>
-					  <div class="form__place-label-wrapper">
-					    <label for="place-tab-1">hotels</label>
-					    <label for="place-tab-2">cottages</label>
-					  </div>
-
-					  <section class="form__building-type form__building-type--hotel">
+					  <div class="form__place-choose  form__place-choose--bg-gray   form__place-choose--hotels">
 					  	<div class="form__step-number">Шаг 3</div>
-	    				<h2 class="Form__place-title">Тип отеля</h2>
-					  </section>
+					    <h2 class="form__place-title">Тип отеля</h2>
 
-					  <section class="form__building-type form__building-type--cottage">
+					     <div class="form__place-hotel-types">
+								<form action="" class="form">
+								  <input type="radio" class="form__hotel-type-1" id="hotel-type-1" name="hotel-type" checked>
+								  <input type="radio" class="form__hotel-type-2" id="hotel-type-2" name="hotel-type">
+								  <input type="radio" class="form__hotel-type-3" id="hotel-type-3" name="hotel-type">
+								  <input type="radio" class="form__hotel-type-4" id="hotel-type-4" name="hotel-type">
+
+					  			<div class="form__hotel-choose">
+								    <label for="hotel-type-1">Эконом</label>
+								    <label for="hotel-type-2">Стандарт</label>
+								    <label for="hotel-type-3">Стандарт+</label>
+								    <label for="hotel-type-4">Люкс</label>
+								  </div>
+
+								  <div class="form__hotel-choose  form__hotel-choose--flagship">
+								    <span>площадь 100м</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--flagship">
+								    <span>3 комнаты</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--flagship">
+								    <span>5 спальных мест</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--flagship">
+								    <span>раздельный санузел</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--flagship">
+								    <span>wifi</span>
+								  </div>
+
+								  <div class="form__hotel-choose  form__hotel-choose--lake">
+								    <span>площадь 70м</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--lake">
+								    <span>3 комнаты</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--lake">
+								    <span>4 спальных места</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--lake">
+								    <span>раздельный санузел</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--lake">
+								    <span>wifi</span>
+								  </div>
+
+								  <div class="form__hotel-choose  form__hotel-choose--olhovka">
+								    <span>площадь 50м</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--olhovka">
+								    <span>3 комнаты</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--olhovka">
+								    <span>3 спальных места</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--olhovka">
+								    <span>раздельный санузел</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--olhovka">
+								    <span>wifi</span>
+								  </div>
+
+								  <div class="form__hotel-choose  form__hotel-choose--port">
+								    <span>площадь 40м</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--port">
+								    <span>3 комнаты</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--port">
+								    <span>3 спальных места</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--port">
+								    <span>раздельный санузел</span>
+								  </div>
+								  <div class="form__hotel-choose  form__hotel-choose--port">
+								    <span>wifi</span>
+								  </div>
+
+
+							</div>  
+					  </div> 
+
+					  <div class="form__place-choose  form__place-choose--bg-gray  form__place-choose--cottages">
 					  	<div class="form__step-number">Шаг 3</div>
-	    				<h2 class="Form__place-title">Тип коттеджа</h2>
-	    				<form action="" class="form__building-type-content">
-		    				<div class="form__building-type-inputs">
-		    					<input type="radio" class="form__building-type-main" id="main-cottage" name="cottage-type" checked>
-		    					<input type="radio" class="form__building-type-lake" id="lake-cottage" name="cottage-type">
-		    					<input type="radio" class="form__building-type-olhovka" id="olhovka-cottage" name="cottage-type">
-		    					<input type="radio" class="form__building-type-port" id="port-cottage" name="cottage-type">
-		  					</div>
-	    					<div class="form__building-type-labels">
-	    						<label for="main-cottage">Флагман</label>
-	    						<label for="lake-cottage">Озерный</label>
-	    						<label for="olhovka-cottage">Ольховка</label>
-	    						<label for="port-cottage">Портовый</label>
-	    					</div>
-	    					<div class="form__building-type-features-wrapper">
-		    					<ul class="form__building-type-features form__building-type-features--main">
-				    				<li>Площадь 100м2</li>
-				    				<li>3 комнаты</li>
-				    				<li>5 спальных мест</li>
-				    				<li>раздельный санузел</li>
-				    				<li>WI-FI</li>
-				    			</ul>
-			    			</div>
+					    <h2 class="form__place-title">Тип коттеджа</h2>
+					    <div class="form__place-cottage-types"> <!--этот див можно убрать-->
+								<form action="" class="form">
+								  <input type="radio" class="form__cottage-type-1" id="cottage-type-1" name="cottage-type" checked>
+								  <input type="radio" class="form__cottage-type-2" id="cottage-type-2" name="cottage-type">
+								  <input type="radio" class="form__cottage-type-3" id="cottage-type-3" name="cottage-type">
+								  <input type="radio" class="form__cottage-type-4" id="cottage-type-4" name="cottage-type">
 
-			    			<div class="form__building-type-features-wrapper">
-		    					<ul class="form__building-type-features form__building-type-features--lake">
-				    				<li>Площадь 100м2</li>
-				    				<li>3 комнаты</li>
-				    				<li>5 спальных мест</li>
-				    				<li>раздельный санузел</li>
-				    				<li>WI-FI</li>
-				    			</ul>
-			    			</div>
+							  	<div class="form__cottage-types-list">
+								    <label class="form__cottage-types-item" for="cottage-type-1">Флагман</label>
+								    <label class="form__cottage-types-item" for="cottage-type-2">Озерный</label>
+								    <label class="form__cottage-types-item" for="cottage-type-3">Ольховка</label>
+								    <label class="form__cottage-types-item" for="cottage-type-4">Портовый</label>
+							    </div>
 
-			    			<div class="form__building-type-features-wrapper">
-		    					<ul class="form__building-type-features form__building-type-features--olhovka">
-				    				<li>Площадь 100м2</li>
-				    				<li>3 комнаты</li>
-				    				<li>5 спальных мест</li>
-				    				<li>раздельный санузел</li>
-				    				<li>WI-FI</li>
-				    			</ul>
-			    			</div>
+									<div class="form__cottage-type-details-list  form__cottage-type-details-list--flagship">
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--area">
+									  площадь 100м
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--rooms">
+									  3 комнаты
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--beds">
+									  5 спальных мест
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--bath">
+									  раздельный санузел
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--wifi">
+									  wi-fi
+									  </div>
+								  </div>
 
-			    			<div class="form__building-type-features-wrapper">
-		    					<ul class="form__building-type-features form__building-type-features--port">
-				    				<li>Площадь 100м2</li>
-				    				<li>3 комнаты</li>
-				    				<li>5 спальных мест</li>
-				    				<li>раздельный санузел</li>
-				    				<li>WI-FI</li>
-				    			</ul>
-			    			</div>
-			    			
-					</form>	
-				</div>  <!--div class="form__place-container-->
-		  </section>
+									<div class="form__cottage-type-details-list  form__cottage-type-details-list--lake">
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--area">
+									  площадь 90м
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--rooms">
+									  4 комнаты
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--beds">
+									  5 спальных мест
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--bath">
+									  раздельный санузел
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--wifi">
+									  wi-fi
+									  </div>
+									</div>
 
-			<section class="form__personal">
-				<div class="form__step-number">Шаг 4</div>
-				<h2 class="form__personal-title">Персональная информация</h2>
+									<div class="form__cottage-type-details-list  form__cottage-type-details-list--olhovka">
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--area">
+									  площадь 80м
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--rooms">
+									  2 комнаты
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--beds">
+									  7 спальных мест
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--bath">
+									  раздельный санузел
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--wifi">
+									  wi-fi
+									  </div>
+									</div>
 
-				<div class="field-text">
-      		<input class="field-text__input" type="text" placeholder="Владимир">
-      	</div>
+									<div class="form__cottage-type-details-list  form__cottage-type-details-list--port">
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--area">
+									  площадь 60м
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--rooms">
+									  3 комнаты
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--beds">
+									  6 спальных мест
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--bath">
+									  раздельный санузел
+									  </div>
+									  <div class="form__cottage-type-details-item  form__cottage-type-details-item--wifi">
+									  wi-fi
+									  </div>
+									</div>
 
-      	<div class="field-text">
-      		<input class="field-text__input" type="text" placeholder="Фамилия">
-      	</div>
-
-      	<div class="field-text">
-      		<input class="field-text__input" type="text" placeholder="Номер телефона">
-      		<span class="field-text__description">Мы свяжемся с вами в случае необходимости.</span>
-      	</div>
-
-      	<div class="field-text">
-      		<input class="field-text__input" type="text" placeholder="e-mail">
-      		<span class="field-text__description">На этот адрес мы вышлем вам подтверждение о забронированном номере.</span>
-      	</div>
+								</form>
+							</div> <!--cottage-types-->
+					  </div> <!--form__place-choose-->
+					</form>
+				</div> <!--container-->
 			</section>
+					
 
-			<section class="form__payment">
-				<div class="form__step-number">Шаг 5</div>
-				<h2 class="form__payment-title">Способ оплаты</h2>
 
-				<div class="form__payment-amount">
-					<span class="form__payment-amount-title">К оплате</span>
-					<span class="form__payment-amount-text">Выберете дату</span>
-				</div>
 
-				<div class="form__payment-on-place-wrapper">
 
-					<div class="form__payment-on-place-content">
-						<label>
-              <input type="radio" id="paymentOnPlace" name="type-of-payment">
-              <span class="payment-on-place__choose">по приезду</span>
-            </label>
-            <p class="payment-on-place__description">Вы можете произвести оплату по факту заселения.</p>
-          </div>
 
-				</div>
 
-				<div class="field-text">
-					<label>Номер карты
-					<input type="text" class="field-text__input" placeholder="0000-0000-0000-0000">
-					</label>
-				</div>
-			</section>
-		<!-- </form> -->
-	</section> -->
+
+
+
+					 
 
 	<footer class="page-footer">
 		<div class="page-footer__container">
