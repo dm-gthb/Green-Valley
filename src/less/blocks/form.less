@@ -138,6 +138,7 @@
 .form {
 
 	&__place {
+		text-align: center;
 		padding-top: 40px;
 		padding-bottom: 50px;
 		@media (min-width: @screen-sm-min) {
@@ -209,7 +210,8 @@
 		}
 	}
 
-	&__cottage-types-list {
+	&__cottage-types-list,
+	&__hotel-types-list  {
 			// border: 1px solid green;
 			background-color: #fff;
 			display: flex;
@@ -226,7 +228,8 @@
 			}
 		}
 
-	&__cottage-types-item {
+	&__cottage-types-item,
+	&__hotel-types-item {
 		display: inline-block;
 		background-color: #fff;
 		line-height: 18px;
@@ -244,7 +247,8 @@
 		}
 	}
 
-	&__cottage-type-details-list {
+	&__cottage-type-details-list,
+	&__hotel-type-details-list {
 		// border: 1px solid green;
 		display: none;
 		@media (min-width: @screen-sm-min) {
@@ -256,7 +260,8 @@
 		}
 	}
 
-	&__cottage-type-details-item {
+	&__cottage-type-details-item,
+	&__hotel-type-details-item {
 		position: relative;
 		// border: 1px solid orange;
 		display: none;
@@ -388,27 +393,27 @@
 }
 
 
-.form__hotel-type-1:checked ~ .form__hotel-choose--flagship {display: block;}
-.form__hotel-type-2:checked ~ .form__hotel-choose--flagship {display: none;}
-.form__hotel-type-3:checked ~ .form__hotel-choose--flagship {display: none;}
-.form__hotel-type-4:checked ~ .form__hotel-choose--flagship {display: none;}
+.form__hotel-type-1:checked ~ .form__hotel-type-details-list--econom {display: flex;}
+.form__hotel-type-2:checked ~ .form__hotel-type-details-list--econom {display: none;}
+.form__hotel-type-3:checked ~ .form__hotel-type-details-list--econom {display: none;}
+.form__hotel-type-4:checked ~ .form__hotel-type-details-list--econom {display: none;}
 
-.form__hotel-type-2:checked ~ .form__hotel-choose--lake {display: block;}
-.form__hotel-type-1:checked ~ .form__hotel-choose--lake {display: none;}
-.form__hotel-type-3:checked ~ .form__hotel-choose--lake {display: none;}
-.form__hotel-type-4:checked ~ .form__hotel-choose--lake {display: none;}
+.form__hotel-type-2:checked ~ .form__hotel-type-details-list--standard {display: flex;}
+.form__hotel-type-1:checked ~ .form__hotel-type-details-list--standard {display: none;}
+.form__hotel-type-3:checked ~ .form__hotel-type-details-list--standard {display: none;}
+.form__hotel-type-4:checked ~ .form__hotel-type-details-list--standard {display: none;}
 
-.form__hotel-type-3:checked ~ .form__hotel-choose--olhovka {display: block;}
-.form__hotel-type-1:checked ~ .form__hotel-choose--olhovka {display: none;}
-.form__hotel-type-2:checked ~ .form__hotel-choose--olhovka {display: none;}
-.form__hotel-type-4:checked ~ .form__hotel-choose--olhovka {display: none;}
+.form__hotel-type-3:checked ~ .form__hotel-type-details-list--standard_plus {display: flex;}
+.form__hotel-type-1:checked ~ .form__hotel-type-details-list--standard_plus {display: none;}
+.form__hotel-type-2:checked ~ .form__hotel-type-details-list--standard_plus {display: none;}
+.form__hotel-type-4:checked ~ .form__hotel-type-details-list--standard_plus {display: none;}
 
-.form__hotel-type-4:checked ~ .form__hotel-choose--port {display: block;}
-.form__hotel-type-1:checked ~ .form__hotel-choose--port {display: none;}
-.form__hotel-type-2:checked ~ .form__hotel-choose--port {display: none;}
-.form__hotel-type-3:checked ~ .form__hotel-choose--port {display: none;}
+.form__hotel-type-4:checked ~ .form__hotel-type-details-list--lux {display: flex;}
+.form__hotel-type-1:checked ~ .form__hotel-type-details-list--lux {display: none;}
+.form__hotel-type-2:checked ~ .form__hotel-type-details-list--lux {display: none;}
+.form__hotel-type-3:checked ~ .form__hotel-type-details-list--lux {display: none;}
 
-.form {
+  .form {
   &__hotel-type-1, 
   &__hotel-type-2, 
   &__hotel-type-3, 
@@ -416,6 +421,5 @@
     display: none;
   }
 }
-
 
 
