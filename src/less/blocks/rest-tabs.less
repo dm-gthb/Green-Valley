@@ -36,7 +36,13 @@
     }
 
     &--corporate {
-      display: none;
+    background-image: url("../../img/rest-tabs__top-bg2.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: @screen-sm-min) {
+        background-position: center center;
+      }
     }
   }
 
@@ -129,7 +135,10 @@
     }
 
     &--corporate {
-      display: none;
+      background-image: url("../../img/rest-tabs__bottom-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
     }
   }
 
@@ -208,3 +217,18 @@
  }  
 
 }
+
+.rest-tabs-type-1:checked ~ .rest-tabs__top-item--family {display: block;}
+.rest-tabs-type-1:checked ~ .rest-tabs__bottom-item--family {display: block;}
+.rest-tabs-type-1:checked ~ .rest-tabs__top-item--corporate {display: none;}
+.rest-tabs-type-1:checked ~ .rest-tabs__bottom-item--corporate {display: none;}
+ 
+.rest-tabs-type-2:checked ~ .rest-tabs__top-item--corporate {display: block;}
+.rest-tabs-type-2:checked ~ .rest-tabs__bottom-item--corporate {display: block;}
+.rest-tabs-type-2:checked ~ .rest-tabs__top-item--family {display: none;}
+.rest-tabs-type-2:checked ~ .rest-tabs__bottom-item--family {display: none;}
+ 
+  .rest-tabs-type-1,
+  .rest-tabs-type-2 {
+    display: none;
+  }

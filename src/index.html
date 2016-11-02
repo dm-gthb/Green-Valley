@@ -40,7 +40,11 @@
 
 	<div class="rest-tabs">
 
-			<div class="rest-tabs__top">
+		<form action="" class="form">
+			<input type="radio" class="rest-tabs-type-1" id="tabs-type-1" name="tab-type" checked>
+			<input type="radio" class="rest-tabs-type-2" id="tabs-type-2" name="tab-type">
+
+			<!-- <div class="rest-tabs__top"> -->
 
 				<div class="rest-tabs__top-item  rest-tabs__top-item--family">
 					<div class="rest-tabs__top-item-container">
@@ -59,21 +63,28 @@
 
 				<div class="rest-tabs__top-item  rest-tabs__top-item--corporate">
 					<div class="rest-tabs__top-item-container">
-
-							<p class="rest-tabs__top-title">Семейный отдых на берегу Финского залива</p>
-							<p class="rest-tabs__top-description">Green Valley – это современная база отдыха <br> в курортном районе для здорового отдыха всей семьёй</p>
-
+							<p class="rest-tabs__top-title">
+								<span class="rest-tabs__text-line">Корпоративный отдых на берегу</span>
+          			<span class="rest-tabs__empty-line"></span>
+          			<span class="rest-tabs__text-line">Финского залива</span>
+							</p>
+							<p class="rest-tabs__top-description">
+								<span class="rest-tabs__text-line  rest-tabs__text-line--small">Green Valley - это современная база отдыха</span>
+          			<span class="rest-tabs__empty-line"></span>
+          			<span class="rest-tabs__text-line rest-tabs__text-line--small">в курортном районе для здорового отдыха дружного коллектива.</span>
+							</p>
 					</div>
 				</div>
 
-		</div> <!-- закрывается "rest-tabs__top" -->
+		<!-- </div>  -->
+		<!-- закрывается "rest-tabs__top" -->
 
 		<div class="rest-tabs__switcher">
-			<a class="rest-tabs__switcher-link rest-tabs__switcher-link--active" href="#">семейный отдых</a>
-			<a class="rest-tabs__switcher-link" href="#">корпоративный</a>
+			<label class="rest-tabs__switcher-link  rest-tabs__switcher-link--family rest-tabs__switcher-link--active" for="tabs-type-1">семейный отдых</label>
+			<label class="rest-tabs__switcher-link  rest-tabs__switcher-link--corporate" for="tabs-type-2">корпоративный</label>
 		</div>
 
-		<div class="rest-tabs__bottom">
+		<!-- <div class="rest-tabs__bottom"> -->
 
 			<div class="rest-tabs__bottom-item  rest-tabs__bottom-item--family">
 				<div class="rest-tabs__bottom-item-container">
@@ -121,7 +132,7 @@
 			<div class="rest-tabs__bottom-item  rest-tabs__bottom-item--corporate">
 				<div class="rest-tabs__bottom-item-container">
 
-						<p class="rest-tabs__bottom-title">Недоровый отдых</p>
+						<p class="rest-tabs__bottom-title">Корпоративный отдых</p>
 						<p class="rest-tabs__bottom-description">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
 
 						<ul class="rest-tabs__bottom-list">
@@ -160,7 +171,9 @@
 
 				</div>
 			</div> <!-- закрывается "rest-tabs__bottom-item" -->
-		</div> <!-- закрывается "rest-tabs__bottom" -->
+		<!-- </div> -->
+		 <!--строкой выше закрывается "rest-tabs__bottom" -->
+		</form>
 	</div> <!-- закрывается <div class="rest-tabs"> -->
 
 	<div class="gallery">
