@@ -178,13 +178,32 @@
 
 	<div class="gallery">
 		<div class="owl-carousel" id="gallery">
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
-			<div><img src="img/gallery-bg.jpg" alt=""></div>
+
+			<!-- <picture class="gallery__picture">
+        <source srcset="./img/gallery-bg-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/gallery-bg-xs.jpg" alt="hotel">
+      </picture> -->
+			<picture class="gallery__picture">
+        <source srcset="./img/room-type-econom-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/room-type-econom-xs.jpg" alt="hotel">
+      </picture>
+      <picture class="gallery__picture">
+        <source srcset="./img/room-type-standard-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/room-type-standard-xs.jpg" alt="hotel">
+      </picture>
+      <picture class="gallery__picture">
+        <source srcset="./img/room-type-standard-plus-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/room-type-standard-plus-xs.jpg" alt="hotel">
+      </picture>
+      <picture class="gallery__picture">
+        <source srcset="./img/room-type-lux-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/room-type-lux-xs.jpg" alt="hotel">
+      </picture>
+      <!-- <picture class="gallery__picture">
+        <source srcset="./img/rest-type-cottage-lg.jpg" media="(min-width: 768px)">
+        <img srcset="./img/rest-type-cottage-xs.jpg" alt="hotel">
+      </picture> -->
+
 		</div>
 	</div>
 
@@ -193,7 +212,7 @@
 			<h1 class="reviews__title">Отзывы</h1>
 
 				<div class="reviews__item-wrapper">
-			
+
 						<div class="reviews__item reviews__item--active">
 							<div class="reviews__author">
 								<img class="reviews__author-img" src="img/reviews-author1.jpg" alt="Ekaterina V.">
@@ -222,6 +241,7 @@
 
 	<section class="offers">
 		<h1 class="offers__title">Акции и предложения</h1>
+		<div class="owl-carousel" id="offers">
 			<div class="offers__item  offers__item--photo1"> 
 				<div class="offers__item-info">
 					<h2 class="offers__item-title">Скидки в мае</h2>
@@ -231,9 +251,18 @@
 	
 			<div class="offers__item  offers__item--photo2"> 
 				<div class="offers__item-info">
-					<h2 class="offers__item-title">Скидки в июне</h2>
-					<p class="offers__item-description">Забронируйте в июне....</p>
+					<h2 class="offers__item-title">Постоянные скидки</h2>
+					<p class="offers__item-description">При повторном отдыхе скидка 15%</p>
 				</div>
+			</div>
+
+			<div class="offers__item  offers__item--photo3"> 
+				<div class="offers__item-info">
+					<h2 class="offers__item-title">Зимние скидки</h2>
+					<p class="offers__item-description">Отдых в зимние месяцы со скидкой 20%</p>
+				</div>
+			</div>
+
 			</div>
 	</section>
 

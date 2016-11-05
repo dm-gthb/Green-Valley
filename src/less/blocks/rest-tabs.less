@@ -94,6 +94,7 @@
       text-transform: uppercase;
       font-size: 14px;
       color: #838383;
+      cursor: pointer;
 
       &--active {
         color: @text-color-orange;
@@ -153,8 +154,11 @@
     margin: 0 auto;
     font-size: @font-size-base;
     line-height: @line-height-base;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     text-align: center;
+    @media (min-width: @screen-sm-min) {
+      margin-bottom: 30px;
+    }
    }
 
    &__bottom-list {
