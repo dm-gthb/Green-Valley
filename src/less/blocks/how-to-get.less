@@ -13,35 +13,40 @@
 
   &__map {
 	  height: 400px;
-	  // max-width: 320px;
 	  width: 100%;
-	  // @media (min-width: @screen-sm-min) {
-	  // 	max-width: 768px;
-	  // }
-	  // @media (min-width: @screen-lg-min) {
-	  // 	max-width: 1200px;
-	  // }
-
-	  // background-color: #ccc;
   }
 
   &__transport-wrapper {
 	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
 	  flex-wrap: wrap;
 	  justify-content: center;
 	  padding-top: 90px;
 	  padding-bottom: 55px;
+	  @media (min-width: @screen-sm-min) {
+	  	padding-bottom: 45px;
+	  }
+	  @media (min-width: @screen-lg-min) {
+	  	flex-direction: row;
+	  	padding-bottom: 70px;
+	  }
 	}
 
 	&__transport-type {
-	  flex-basis: 565px;
-	  flex-shrink: 1;
+		max-width: 565px;
+	  // flex-basis: 565px;
+	  // flex-shrink: 1;
 	  margin-left: 10px;
 	  margin-right: 10px;
 	  position: relative;
 
 		&--bus {
 			margin-bottom: 80px;	
+			@media (min-width: @screen-lg-min) {
+				margin-bottom: 0;
+			}
+			
 		}
 
 		&::before {

@@ -7,6 +7,7 @@
 		text-transform: uppercase;
 		color: #929292;
 		margin-bottom: 12px;
+		// border: 1px dashed green;
 	}
 
 
@@ -42,6 +43,8 @@
 
 // form_date
 	&__date {
+
+		border: 2px dashed red;
 		padding-top: 50px;
 		padding-bottom: 12px;
 		background-color: @grey;
@@ -138,9 +141,10 @@
 .form {
 
 	&__place {
+		// border: 2px dashed red;
 		text-align: center;
 		padding-top: 40px;
-		padding-bottom: 50px;
+		// padding-bottom: 50px;
 		@media (min-width: @screen-sm-min) {
 			padding-top: 50px;
 		}
@@ -324,11 +328,54 @@
 	}
 
 
+	&__personal {
+		// border: 1px solid green;
+		padding-top: 50px;
+		text-align: center;
+	}
 
-	&__place-cottage-types {
-		// display: flex;
-		// flex-direction: column;
-		// border: 1px solid red;
+	&__personal-title {
+		font-size: @font-size-h1;
+		line-height: 19px;
+		margin-bottom: 32px;
+		@media (min-width: @screen-sm-min) {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.field-text {
+
+		flex: 0 1 340px;
+		margin-bottom: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
+		@media (min-width: @screen-lg-min) {
+			flex-basis: 360px;
+		}
+
+	&__wrapper {
+		// border: 1px solid blue;
+		max-width: 820px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		padding: 0 10px;
+	}
+
+	&__input {
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		color: @aqua;
+		font-size: @font-size-small;
+		line-height: 18px;
+		text-transform: uppercase;
+
 	}
 }
 
