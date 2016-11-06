@@ -279,58 +279,87 @@
 			<section class="form__personal">
 				<div class="form__step-number">Шаг 4</div>
 				<h2 class="form__personal-title">Персональная информация</h2>
-				<div class="field-text__wrapper">
+				<form class="form" action="">
+					<div class="field-text__wrapper">
+					
+						<div class="field-text">
+		      		<input class="field-text__input" type="text" placeholder="Владимир">
+		      	</div>
 
-					<div class="field-text">
-	      		<input class="field-text__input" type="text" placeholder="Владимир">
-	      	</div>
+		      	<div class="field-text">
+		      		<input class="field-text__input" type="text" placeholder="Фамилия">
+		      	</div>
 
-	      	<div class="field-text">
-	      		<input class="field-text__input" type="text" placeholder="Фамилия">
-	      	</div>
+		      	<div class="field-text">
+		      		<input class="field-text__input" type="text" placeholder="Номер телефона">
+		      		<div class="field-text__description">Мы свяжемся с вами в случае необходимости.</div>
+		      	</div>
 
-	      	<div class="field-text">
-	      		<input class="field-text__input" type="text" placeholder="Номер телефона">
-	      		<div class="field-text__description">Мы свяжемся с вами в случае необходимости.</div>
-	      	</div>
-
-	      	<div class="field-text">
-	      		<input class="field-text__input" type="text" placeholder="e-mail">
-	      		<div class="field-text__description">На этот адрес мы вышлем вам подтверждение о забронированном номере.</div>
-	      	</div>
-
-      	</div>
+		      	<div class="field-text">
+		      		<input class="field-text__input" type="text" placeholder="e-mail">
+		      		<div class="field-text__description">На этот адрес мы вышлем вам подтверждение о забронированном номере.</div>
+		      	</div>
+					
+      		</div>
+      	</form>
 			</section>
 
 			<section class="form__payment">
-				<span class="form__step-number">Шаг 5</span>
+				<div class="form__step-number">Шаг 5</div>
 				<h2 class="form__payment-title">Способ оплаты</h2>
+				<div class="form__payment-container">
 
-				<div class="form__payment-amount">
-					<span class="form__payment-amount-title">К оплате</span>
-					<span class="form__payment-amount-text">Выберете дату</span>
+					<div class="form__payment-amount">
+						<div class="form__payment-amount-title">К оплате</div>
+						<div class="form__payment-amount-text">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</div>
+					</div>
+
+					<div class="form__payment-type">
+
+						<form action="">
+							<input type="radio" class="form__payment-type-1" id="payment-type-1" name="payment-type">
+						  <input type="radio" class="form__payment-type-2" id="payment-type-2" name="payment-type" checked>
+						
+							<div class="form__payment-on-place">
+								<label for="payment-type-1" class="form__payment-on-place-title" >по приезду</label>
+		            <p class="form__payment-on-place-description">Вы можете произвести оплату по факту заселения.</p>
+		          </div>
+
+		          <div class="form__payment-now">
+
+		          	<div class="form__payment-now-head">	
+			          		<label for="payment-type-2" class="form__payment-now-title">сейчас</label>
+			          		<p class="form__payment-now-description">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+		          	</div>
+
+
+		          	<div class="card">
+		          		<label for="card-number" class="card__label  card__label--number">Номер карты
+		          			<input type="text" class="card__input  card__input--number" id="card-number" placeholder="0000-0000-0000-0000">
+		          		</label>
+
+		          		<label for="card-holder" class="card__label  card__label--name">Фамилия владельца карты
+		          			<input type="text" class="card__input  card__input--name" id="card-holder" placeholder="Vladimir Vladimirov">
+		          		</label>
+
+		          		<label for="cvv" class="card__label  card__label--cvv">Код CVV
+		          			<input type="text" class="card__input  card__input--cvv" id="cvv" placeholder="123">
+		          		</label>
+
+		          		<label for="card-date" class="card__label  card__label--date">Действует до
+		          			<input type="text" class="card__input  card__input--date" id="card-date" placeholder="01/2018">
+		          		</label>
+		          	</div>
+		          	
+		          </div>
+						</form>
+					</div>
+
+					
 				</div>
-
-				<div class="form__payment-on-place-wrapper">
-
-					<div class="form__payment-on-place-content">
-						<label>
-              <input type="radio" id="paymentOnPlace" name="type-of-payment">
-              <span class="payment-on-place__choose">по приезду</span>
-            </label>
-            <p class="payment-on-place__description">Вы можете произвести оплату по факту заселения.</p>
-          </div>
-
-				</div>
-
-				<div class="field-text">
-					<label>Номер карты
-					<input type="text" class="field-text__input" placeholder="0000-0000-0000-0000">
-					</label>
-				</div>
+				<a class="btn  btn--non-bordered-square">Забронировать</a>
 			</section>
-		<!-- </form> -->
-	</section> -->
+	
 
 
 

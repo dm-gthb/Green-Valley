@@ -51,5 +51,13 @@
     padding-bottom: 0px;
   }
 
-  &--non-bordered-square{}
+  &--non-bordered-square{
+    max-width: 280px;
+      width: 100%;
+      padding: 14px 32px;
+    background-color: green;
+    @media (min-width: @screen-sm-min) {
+      max-width: 780px;
+    }
+  }
 }
