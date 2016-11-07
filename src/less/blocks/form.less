@@ -184,13 +184,25 @@
 		position: relative;
 		width: 190px;
 		height: 160px;
-		border: 1px solid  #ddd;
 		font-size: @font-size-small;
 		line-height: 18px;
 		text-transform: uppercase;
 		padding-top: 29px;
 		color: #4c4c4c;
 		margin-bottom: 50px;
+			&--active {
+				&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-green.png");
+					background-repeat: no-repeat;
+					left: 45%;
+					bottom: 14px;
+					// transform: translateX(-20%);
+				}
+			}
 		&::after {
 			content: '';
 			position: absolute;
@@ -234,6 +246,7 @@
 
 	&__cottage-types-item,
 	&__hotel-types-item {
+		position: relative;
 		display: inline-block;
 		background-color: #fff;
 		line-height: 18px;
@@ -241,6 +254,25 @@
 		text-transform: uppercase;
 		color: #979696;
 		margin-bottom: 35px;
+		&--active {
+			position: relative;
+				&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-green.png");
+					background-repeat: no-repeat;
+					right: -50px;
+					top: 0px;
+					@media (min-width: @screen-sm-min){
+					left: 45%;
+					top: 70%;
+					transform: translateX(-50%);
+					transform: translateY(-50%);
+				}
+				}
+			}
 
 		@media (min-width: @screen-sm-min){
 		width: 190px;
@@ -425,6 +457,7 @@
 				flex-wrap: nowrap;
 				justify-content: stretch;
 				align-items: stretch;
+				margin-bottom: 50px;
 				// align-content: stretch;
 				// justify-content: space-between;
 			}
@@ -443,6 +476,7 @@
 			order:2;
 			margin-bottom: 50px;	
 			@media (min-width: @screen-sm-min) {
+				margin-bottom: 0;
 				padding-right: 20px;
 				max-width: 280px;
 				margin-right: 20px;
@@ -473,12 +507,14 @@
 			width: 100%;
 			order:1;
 			@media (min-width: @screen-sm-min) {
+				padding-bottom: 0;
 				max-width: 480px;
 				order:2;
 			}
 		}
 
 		&-on-place {
+			// border: 1px solid red;
 			text-align: left;
 			background-color: #fff;
 			padding-left: 55px;
@@ -493,14 +529,39 @@
 				@media (min-width: @screen-sm-min) {
 					padding-bottom: 14px;	
 				}
+
+				
 				
 
 			&-title{
+				position: relative;
+				// border: 1px solid red;
 				display: inline-block;	
 				font-size: 	@font-size-small;
 				line-height: 18px;	
 				text-transform: uppercase;
-					
+				&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-gray.png");
+					background-repeat: no-repeat;
+					left: -36px;
+				}
+
+				&--active {
+					position: relative;
+					&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-green.png");
+					background-repeat: no-repeat;
+					left: -36px;
+				}
+				}
 			}
 
 			&-description {
@@ -515,10 +576,13 @@
 		}
 
 		&-now {
+			// border: 1px solid red;
 			background-color: #fff;
 			text-align: left;	
 
+
 			&-head {
+				// border: 1px solid red;
 				text-align: left;
 			background-color: #fff;
 			padding-left: 55px;
@@ -534,12 +598,34 @@
 
 
 			&-title {
+				position: relative;
 				display: block;	
 				font-size: 	@font-size-small;
 				line-height: 18px;	
 				text-transform: uppercase;
-			
+				&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-gray.png");
+					background-repeat: no-repeat;
+					left: -36px;
+				}
+				&--active {
+					position: relative;
+					&::before {
+					position: absolute;
+					width: 162px;
+					height: 12px;
+					content: '';
+					background-image: url("../../img/input-green.png");
+					background-repeat: no-repeat;
+					left: -36px;
+				}
+				}
 			}
+
 			&-description {
 				display: none;
 				@media (min-width: @screen-sm-min) {
@@ -555,10 +641,12 @@
 
 .card {
 	// border: 1px solid blue;
+	text-align: center;	
 	padding-left: 20px;	
 	padding-right: 20px;
-	padding-bottom: 20px;	
+	padding-bottom: 5px;
 	@media (min-width: @screen-sm-min) {
+		padding-bottom: 0;
 		display: flex;	
 		flex-wrap: wrap;	
 		justify-content: space-between;	
@@ -568,6 +656,7 @@
 
 	&__input {
 		display: block;	
+		// margin: 0 auto;	
 		margin-top: 15px;	
 		height: 40px;
 		font-size: 	@font-size-small;
@@ -575,7 +664,8 @@
 		text-transform: uppercase;	
 		&--number {
 			padding-left: 42px;	
-			width: 240px;
+			min-width: 240px;
+			width: 100%;	
 			@media (min-width: @screen-sm-min){
 				max-width: 260px;	
 				width: 100%;	
@@ -583,7 +673,8 @@
 		}
 		&--name {
 			padding-left: 42px;	
-			width: 240px;	
+			min-width: 240px;
+			width: 100%;
 			@media (min-width: @screen-sm-min){
 				max-width: 260px;
 				width: 100%;	
@@ -610,6 +701,9 @@
 	&__label {
 		// border: 1px solid black;	
 		display: block;	
+		width: 100%;	
+		margin: 0 auto;	
+		text-align: left;	
 		margin-bottom: 20px;	
 		font-size: 	@font-size-small;
 		line-height: 18px;	
