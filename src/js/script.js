@@ -9,6 +9,15 @@ $(document).ready(function(){
 });
 });
 
+var toggler = document.getElementById('toggler');
+toggler.onclick = function(e){
+  e.preventDefault();
+  // toggler.classList.toggle('toggler--close');
+  document.getElementById('main-nav').classList.toggle('main-nav--active');
+  document.getElementById('main-nav__list').classList.toggle('main-nav__list--active');
+  // document.getElementById('main-nav__item').classList.toggle('main-nav__item--active');
+}
+
 
 
 
