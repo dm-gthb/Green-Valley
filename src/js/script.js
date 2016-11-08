@@ -15,6 +15,7 @@ toggler.onclick = function(e){
   // toggler.classList.toggle('toggler--close');
   document.getElementById('main-nav').classList.toggle('main-nav--active');
   document.getElementById('main-nav__list').classList.toggle('main-nav__list--active');
+  document.getElementById('page-header').classList.toggle('page-header--active');
   // document.getElementById('main-nav__item').classList.toggle('main-nav__item--active');
 }
 
