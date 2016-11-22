@@ -1,6 +1,5 @@
 .rest-tabs {
 
-
   &__top-item {
     min-height: 322px;
     padding-top: 20px;
@@ -21,8 +20,6 @@
       @media (min-width: @screen-lg-min) {
         width: 1180px;
       }
-
-
     }
 
     &--family {
@@ -47,9 +44,11 @@
   }
 
   &__top-title {
-    font-size: @font-size-h2;
+    font-family: 'PT Serif Caption';
+    font-weight: normal;
+    font-size: 18px;
     line-height: 26px;
-    color: @text-color-black;
+    color: @text-color;
     margin-bottom: 12px;
     text-align: center;
     letter-spacing: 0.9px;
@@ -67,13 +66,13 @@
   &__top-description {
     font-size: @font-size-base;
     line-height: 24px;
-    color: @text-color-black;
+    color: @text-color;
     text-align: center;
 
 
     @media (min-width: @screen-sm-min) {
       text-align: left;
-      font-size: @font-size-h2;
+      font-size: 18px;
       line-height: 24px;
       margin-left: -8px;  
       }
@@ -93,18 +92,18 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 14px;
-      color: #838383;
+      color: @gray;
       cursor: pointer;
 
       &--active {
-        color: @text-color-orange;
+        color: @color-main--orange;
 
         &::after {
           content: '';
           display: block;
           height: 2px;
           width: 30px;
-          background-color: @text-color-orange;
+          background-color: @color-main--orange;
           margin: 0 auto;
           padding: 0;
           margin-top: 10px;
@@ -144,7 +143,8 @@
   }
 
    &__bottom-title {
-    font-size: @font-size-h1;
+    font-size: 26px;
+    font-weight: normal;
     text-align: center;
     margin-bottom: 30px;
    } 
@@ -154,7 +154,6 @@
     margin: 0 auto;
     font-size: @font-size-base;
     line-height: @line-height-base;
-    // margin-bottom: 30px;
     text-align: center;
     @media (min-width: @screen-sm-min) {
       margin-bottom: 30px;

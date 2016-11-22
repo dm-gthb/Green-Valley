@@ -24,30 +24,28 @@
 	      transform: translateX(-50%);
 	      background-color: #fff;
 	      width: 100%;
-	      border-top: 1px solid  @grey;
-
+	      border-top: 1px solid @gray-lighten;
 			}
 		}
 
 	&__item {
 		padding: 10px 0px;
-		border-bottom: 1px solid  @grey;
+		border-bottom: 1px solid @gray-lighten;
 		@media (min-width: @screen-lg-min){
 			margin-right: 18px;
 			padding: 0;
 			border: none;
 		}
-		
 	}	
 
 	&__link {
 		text-decoration: none;
 		text-transform: uppercase;
-		color: @text-color-black;
+		color: @text-color;
 		font-size: @font-size-small;
 
 		&--active {
-			color: @text-color-orange;
+			color: @color-main--orange;
 		}
 	}
 

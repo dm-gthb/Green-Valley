@@ -1,6 +1,5 @@
 .about-room {
-	// border: 2px solid green;
-	max-width: 1200px;
+	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 48px;
@@ -12,10 +11,8 @@
 	@media (min-width: @screen-lg-min) {
 		margin-bottom: 48px;
 	}
-	// text-align: center;
 
 	&__info-wrapper {
-		// border: 1px dashed green;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -29,7 +26,6 @@
 	}
 
 	&__info-picture {
-		// border: 1px solid red;
 		text-align: center;
 		max-width: 580px;
 		width: 100%;
@@ -48,13 +44,10 @@
 	}
 
 	&__info-description {
-		// border: 1px solid red;
 		max-width: 580px;
 		width: 100%;
 		margin: 0 auto;
-		// margin-bottom: 42px;
 		padding-left: 20px;
-		// padding-top: 48px;
 
 		@media (min-width: @screen-lg-min) {
 			padding-left: 0;
@@ -64,11 +57,11 @@
 	}
 
 	&__info-title {
-		font-size: @font-size-h1;
+		font-size: 26px;
 		line-height: 19px;
 		margin-bottom: 22px;
 		margin-top: 42px;
-		color: @text-color-black;
+		color: @text-color;
 
 		&--first {
 			margin-top: 48px;
@@ -81,8 +74,7 @@
 	&__info-text {
 		font-size: @font-size-base;
 		line-height: @line-height-base;
-		// margin-bottom: 42px;
-		color: @text-color-black;
+		color: @text-color;
 	}
 
 	&__info-features-list-wrapper {
@@ -96,14 +88,12 @@
 
 	&__info-features-list {
 		width: 100%;
-		// border: 1px solid red;
 		list-style: none;
 		font-size: @font-size-base;
 		line-height: @line-height-base;
 	}
 
 	&__info-features-item {
-		// border: 1px solid blue;
 		position: relative;
 		padding-left: 11px;
 		margin-bottom: 7px;
@@ -117,8 +107,8 @@
 			position: absolute;
 			width: 5px;
 			height: 5px;
-			border-top: 2px solid @orange;
-		  border-right: 2px solid @orange;
+			border-top: 2px solid @color-main--orange;
+		  border-right: 2px solid @color-main--orange;
 		  transform: rotate(45deg);
 		  left: 0px;
 		  top: 0px;
@@ -129,7 +119,6 @@
 
 	&__to-book {
 		text-align: center;
-		// border: 1px solid blue;
 		margin-top: 42px;
 		@media (min-width: @screen-sm-min){
 			margin-top: 35px;

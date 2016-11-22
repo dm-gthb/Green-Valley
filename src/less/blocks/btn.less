@@ -5,7 +5,7 @@
   font-size: @font-size-btn;
   text-transform: uppercase;
   text-decoration: none;
-  color: @white;
+  color: @text-btn-color;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -15,7 +15,7 @@
 
 	
 	&--icon-calendar {
-    background-color: @orange;
+    background-color: @color-main--orange;
     padding-left: 42px;
     padding-right: 20px;
     padding-top: 14px;
@@ -42,21 +42,21 @@
   &--non-bordered-round {
     padding: 14px 32px;
     border-radius: 50px;
-    background-color: @orange;
+    background-color: @color-main--orange;
   }
 
   &--bottom-bordered {
-    color: @text-color-black;
+    color: @text-color;
     border-bottom: 1px dashed black;
     padding-bottom: 0px;
   }
 
   &--non-bordered-square{
-    max-width: 280px;
-      width: 100%;
-      padding: 14px 32px;
-    background-color: green;
-    @media (min-width: @screen-sm-min) {
+    max-width: 320px;
+    width: 100%;
+    padding: 14px 32px;
+    background-color: @color-main--green;
+      @media (min-width: @screen-sm-min) {
       max-width: 780px;
     }
   }
