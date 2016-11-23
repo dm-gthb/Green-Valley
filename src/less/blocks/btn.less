@@ -12,14 +12,15 @@
   cursor: pointer;
   white-space: nowrap;
   margin: 0;
+  line-height: 18px;
 
 	
 	&--icon-calendar {
     background-color: @color-main--orange;
     padding-left: 42px;
     padding-right: 20px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 50px;
     &::before {
       position: absolute;
@@ -28,7 +29,12 @@
       content: '';
       width: 15px;
       height: 16px;
-      background-image: url('../../img/btn-icon-calendar.png');
+      background-image: url("../../img/sprite-png.png");
+      background-repeat: no-repeat;
+      background-position: -135px -5px;
+    }
+    &:hover {
+      background-color: @color-main--orange-hover;
     }
 	}
 
@@ -37,18 +43,30 @@
     border: 1px solid white;
     border-radius: 50px;
     padding: 12px 28px;
-  }
 
-  &--non-bordered-round {
-    padding: 14px 32px;
-    border-radius: 50px;
-    background-color: @color-main--orange;
+    &:hover {
+      background-color: #fff;
+      color: @color-main--green;
+    }
   }
 
   &--bottom-bordered {
     color: @text-color;
     border-bottom: 1px dashed black;
     padding-bottom: 0px;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+    &--non-bordered-round {
+    padding: 10px 32px;
+    border-radius: 50px;
+    background-color: @color-main--orange;
+    &:hover {
+      background-color: @color-main--orange-hover;
+    }
   }
 
   &--non-bordered-square{
@@ -58,6 +76,10 @@
     background-color: @color-main--green;
       @media (min-width: @screen-sm-min) {
       max-width: 780px;
+    }
+
+    &:hover {
+      background-color: @color-main--green-hover;
     }
   }
 }
