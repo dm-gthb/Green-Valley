@@ -44,8 +44,8 @@
   }
 
   &__top-title {
-    font-family: 'PT Serif Caption';
-    font-weight: normal;
+    font-family: @font-family--ptserif-cap;
+    font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     color: @text-color;
@@ -65,6 +65,7 @@
 
   &__top-description {
     font-size: @font-size-base;
+    font-family: @font-family--fira;
     line-height: 24px;
     color: @text-color;
     text-align: center;
@@ -92,6 +93,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 14px;
+      font-family: @font-family--fira;
       color: @gray;
       cursor: pointer;
 
@@ -144,15 +146,21 @@
 
    &__bottom-title {
     font-size: 26px;
-    font-weight: normal;
+    font-family: @font-family--ptserif-cap;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
+    @media (min-width: @screen-sm-min) {
+      font-size: 30px;
+    }
+
    } 
 
    &__bottom-description {
     max-width: 570px;
     margin: 0 auto;
     font-size: @font-size-base;
+    font-family: @font-family--fira;
     line-height: @line-height-base;
     text-align: center;
     @media (min-width: @screen-sm-min) {
@@ -183,6 +191,8 @@
       text-transform: uppercase;
       text-align: center;
       font-size: @font-size-small;
+      font-family: @font-family--fira;
+      font-weight: 500;
       flex-basis: 130px;
       display: flex;
       flex-direction: column;

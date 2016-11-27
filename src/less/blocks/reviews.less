@@ -19,8 +19,14 @@
   	color: #fff;
   	margin-bottom: 50px;
     font-size: 26px;
+    font-family: @font-family--ptserif-cap;
+    font-weight: 400;
+    letter-spacing: 0.5px;
     margin-bottom: 55px;
     text-align: center; 
+    @media (min-width: @screen-sm-min) {
+      font-size: 30px;
+    }
   }
 
   &__item-wrapper {
@@ -60,7 +66,9 @@
     left: 50%; 
     transform: translateX(-50%); 
     font-size: @font-size-small;
-    line-height: 14px;
+    font-family: @font-family--fira;
+    font-weight: 500;
+    line-height: 18px;
 
   }
 
@@ -71,11 +79,13 @@
 
   &__content {
     margin-bottom: 20px;
+    font-family: @font-family--fira;
     font-size: @font-size-base;
     line-height: @line-height-base;
   }
 
   &__date {
+    font-family: @font-family--fira;
     font-size: @font-size-small;
     line-height: 18px;
   }

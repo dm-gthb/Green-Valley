@@ -3,6 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
+  <script>@@include('fonts/font_loading.js')</script>
+  <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
+  <noscript><link rel="stylesheet" href="css/fonts_woff.css"></noscript>
+
+  @@include('_include/page-head.html')
 	<title>О номере</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,11 +48,10 @@
 
 	<section class="about-room"> 
 
-			<div class="about-room__item"> <!--убрать?-->
-				<div class="place__text place__text--about-room">
-					<h2 class="place__title">Эконом</h2>
-					<span class="place__price">
-						от <span class="place__total-sum">3400</span> руб/сутки
+				<div class="about-room__header">
+					<h2 class="about-room__header-title">Эконом</h2>
+					<span class="about-room__header-price">
+						от <span class="about-room__header-total-sum">3400</span> руб/сутки
 					</span>
 				</div>
 
@@ -97,7 +102,6 @@
 					</div>
 				</div>
 				
-			</div>
 	</section>
 
 	<div class="recommend-rooms">

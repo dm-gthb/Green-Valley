@@ -53,7 +53,8 @@
 
 @font-face {
     font-family: 'PT Serif Caption';
-    src: url('ptserifcaption.woff') format('woff');
-    font-weight: normal;
+    font-style: normal;
+    src: url('ptserifcaption.woff2') format('woff');
+    font-weight: 400;
     font-style: normal;
 }

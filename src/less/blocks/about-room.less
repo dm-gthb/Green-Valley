@@ -12,6 +12,36 @@
 		margin-bottom: 48px;
 	}
 
+	&__header {
+		text-align: center;
+		padding-top: 48px;
+		padding-bottom: 30px;
+		@media (min-width: @screen-sm-min) {
+			padding-bottom: 48px;
+		}
+
+		&-title {
+			font-size: 30px;
+			line-height: 19px;
+			margin-bottom: 10px;
+			font-family: @font-family--ptserif;
+			font-weight: 400;
+		}
+
+		&-price {
+			font-size: 16px;
+			font-family: @font-family--fira;
+			font-weight: 500;
+			line-height: 24px;
+		}
+
+		&-total-sum {
+			color: @color-main--orange;
+		}
+	}
+
+
+
 	&__info-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -62,6 +92,8 @@
 		margin-bottom: 22px;
 		margin-top: 42px;
 		color: @text-color;
+		font-family: @font-family--ptserif;
+		font-weight: 400;
 
 		&--first {
 			margin-top: 48px;
@@ -75,6 +107,7 @@
 		font-size: @font-size-base;
 		line-height: @line-height-base;
 		color: @text-color;
+		font-family: @font-family--fira;
 	}
 
 	&__info-features-list-wrapper {
@@ -91,6 +124,7 @@
 		list-style: none;
 		font-size: @font-size-base;
 		line-height: @line-height-base;
+		font-family: @font-family--fira;
 	}
 
 	&__info-features-item {

@@ -73,27 +73,27 @@ function loadFont(fontName, woffUrl, woff2Url) {
 }
 
 
-Вызываем функцию подгрузки
-loadFont(
-    'Open Sans_my',                      // название шрифта
-    '/css/font_opensans_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/font_opensans_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
-  );
-
+// Вызываем функцию подгрузки
 loadFont(
     'Fira Sans',                      // название шрифта
-    '/css/font_opensans_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/font_opensans_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
   );
 
 loadFont(
     'PT Sans Caption',                      // название шрифта
-    '/css/font_opensans_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/font_opensans_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
   );
 
 loadFont(
     'PT Serif Regular',                      // название шрифта
-    '/css/font_opensans_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/font_opensans_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+  );
+
+loadFont(
+    'PT Serif Caption',                      // название шрифта
+    '/css/fonts_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
   );

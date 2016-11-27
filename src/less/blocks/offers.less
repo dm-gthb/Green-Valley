@@ -13,8 +13,14 @@
 	
 	&__title {
 		font-size: 26px;
+		font-family: @font-family--ptserif-cap;
+		font-weight: 400;
+		letter-spacing: 0.5px;
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 26px;
+		@media (min-width: @screen-sm-min) {
+			font-size: 30px;
+		}
 	}
 
 	&__item {
@@ -54,7 +60,10 @@
 		&-title {
 			margin: 0;
 			margin-bottom: 8px;
-			font-size: 18px;
+			font-size: @font-size-small;
+			line-height: 24px;
+			font-family: @font-family--fira;
+			font-weight: 500;
 			text-transform: uppercase;
 			color: @color-main--orange;
 		}
@@ -62,6 +71,7 @@
 		&-description {
 			font-size: @font-size-base;
 			line-height: 20px;
+			font-family: @font-family--fira;
 			color: @text-color;
 		}
 	}
