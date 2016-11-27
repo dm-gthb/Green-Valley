@@ -17,37 +17,43 @@
   font-style: normal;
 }
 
-// @font-face {
-//     font-family: 'Fira Sans';
-//     src: url('firasans.woff') format('woff');
-//     font-weight: 400;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('firasans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: 'Fira Sans';
-//     src: url('firasans_medium.woff') format('woff');
-//     font-weight: 500;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('firasans_medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: 'PT Sans Caption';
-//     src: url('ptsanscaption.woff') format('woff');
-//     font-weight: 400;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'PT Sans Caption';
-//     src: url('ptsanscaption_bold.woff') format('woff');
-//     font-weight: 700;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('ptsanscaption.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('ptsanscaption_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: 'PT Serif Regular';
-//     src: url('ptserif-regular.woff') format('woff');
-//     font-weight: 400;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'PT Serif Regular';
+    src: url('ptserif-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'PT Serif Caption';
+    src: url('ptserifcaption.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
